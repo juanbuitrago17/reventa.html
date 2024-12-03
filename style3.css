@@ -1,0 +1,107 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000; 
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+}
+body {
+    margin:0;
+    font-family:'Courier New', Courier, monospace;
+}
+.my-order{
+    width: 100%;
+    height: 100hv;
+    display: grid;
+    place-items: center;
+}
+.title {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.my-order-content{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.my-order-container{
+    display: flex;
+    flex-direction: column;
+}
+.shopping-card figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.shopping-card p:nth-child(2){
+    color: var(--very-light-pink);
+}
+.shopping-card p:nth-last-child(3){
+    font-size: 18px;
+    font-weight: bold;
+}
+.shopping-card{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.shopping-card figure {
+    margin: 0;
+}
+.order{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+.order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+.order p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+.order p span:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+}
+.order p span:nth-child(2){
+    font-size: 14px;
+    color: var(--very-light-pink);
+}
+.order2{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.order2 p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+.order2 p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+.order2 p span:nth-child(1){
+    font-size: 18px;
+    font-weight: bold;
+}
+.order2 p span:nth-child(2){
+    font-size: 14px;
+    color: var(--very-light-pink);
+}
+.icono{
+width: 15px;
+margin-bottom: 5px;
+justify-self: center;
+}
